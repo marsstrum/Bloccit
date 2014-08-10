@@ -28,3 +28,6 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 ## Bloccit: a Reddit clone to teach the fundamentals of web development and Rails 4
 Made with Mentor at [Bloc](http://bloc.io)
+
+Heroku Approved app name: marsstrum-bloccit
+Heroku url: (http://marsstrum-bloccit.herokuapp.com/)(http://marsstrum-bloccit.herokuapp.com/)
