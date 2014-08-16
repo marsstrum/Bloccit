@@ -48,6 +48,8 @@ end
 #adding Devise for user Authentication
 gem 'devise'
 
+#adding Figaro to store Sendgrid and Devise credentials
+gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

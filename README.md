@@ -29,5 +29,9 @@ Please feel free to use a different markup language if you do not plan to run
 ## Bloccit: a Reddit clone to teach the fundamentals of web development and Rails 4
 Made with Mentor at [Bloc](http://bloc.io)
 
-Heroku Approved app name: marsstrum-bloccit
-Heroku url: (http://marsstrum-bloccit.herokuapp.com/)(http://marsstrum-bloccit.herokuapp.com/)
+Heroku Approved app name: highbrook-bloccit
+Heroku url: (http://highbrook-bloccit.herokuapp.com/)(http://highbrook-bloccit.herokuapp.com/)
+
+SETUP
+config/application.yml
+config/application.example.yml
