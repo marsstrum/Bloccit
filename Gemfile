@@ -50,6 +50,9 @@ gem 'devise'
 
 #adding Figaro to store Sendgrid and Devise credentials
 gem 'figaro'
+
+#Add pundit for authorization checkpoint
+gem 'pundit'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

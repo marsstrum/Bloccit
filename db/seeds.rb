@@ -41,7 +41,7 @@ end
 
 User.first.update_attributes(
 	email: 'dfrench3@nycap.rr.com',
-	password:  'Lm2700#.'
+	password:  'thepassword'
 	)
 
 
