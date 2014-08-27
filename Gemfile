@@ -53,6 +53,10 @@ gem 'figaro'
 
 #Add pundit for authorization checkpoint
 gem 'pundit'
+
+#Adding simple_form for 'Validating Posts' Checkpoint Exercise
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
