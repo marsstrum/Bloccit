@@ -57,6 +57,9 @@ gem 'pundit'
 #Adding simple_form for 'Validating Posts' Checkpoint Exercise
 gem 'simple_form'
 
+#Add Redcarpet for Markdown exercise
+gem 'redcarpet'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

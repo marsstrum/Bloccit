@@ -25,6 +25,10 @@
 			</ul>
 		</div>
 	<% end %>
+	<div class="<%=errors_class(post.errors[:title])%>">
+		<%= f.label :title %>
+		<%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
+	</div>
 	<%=form_group_tag(post.errors[:title]) do %>
 		<%= f.label :title %>
 		<%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
