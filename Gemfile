@@ -60,6 +60,13 @@ gem 'simple_form'
 #Add Redcarpet for Markdown exercise
 gem 'redcarpet'
 
+#Add carrierwave and minimagick for image uploading checkpoint
+gem 'carrierwave'
+gem 'mini_magick'
+
+#add fog to support Amazon S3
+gem 'fog'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
