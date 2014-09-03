@@ -1,4 +1,4 @@
-<%= simple_form_for [topic, post] do |f| %>
+<!--<%= simple_form_for [topic, post] do |f| %>
 <% if post.errors.any? %>
 		<div class="alert alert-danger">
 			<h4>There are <%= pluralize(post.errors.count, "error") %>.</h4>
@@ -12,9 +12,9 @@
 	<%= f.input :title, error: false, input_html: { class: 'form-control' } %>
 	<%= f.input :body, error: false, input_html: { class: 'form-control' } %>
 	<%= f.button :submit, "Save", class: "btn btn-success" %>
-<% end %>
+<% end %>-->
 
-<!--<%= form_for [topic, post] do |f| %>
+<%= form_for [topic, post] do |f| %>
 	<% if post.errors.any? %>
 		<div class="alert alert-danger">
 			<h4>There are <%= pluralize(post.errors.count, "error") %>.</h4>
@@ -29,15 +29,15 @@
 		<%= f.label :title %>
 		<%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
 	</div>
-	<%=form_group_tag(post.errors[:title]) do %>
-		<%= f.label :title %>
-		<%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
-	<% end %>
-	<%=form_group_tag(post.errors[:body]) do %>
+	<div class="<%= errors_class(post.errors[:body]) %>"
 		<%= f.label :body %>
-		<%= f.text_field :body, rows: 8, class: 'form-control', placeholder: "Enter post body" %>
-	<% end %>
+		<%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter post body" %>
+	</div>
+	<!--<div class="<%= errors_class(post.errors[:image]) %>"
+		<%= f.label :image %>
+		<%= f.file_field :image %>
+	</div>-->
 	<div class="form-group">
 		<%= f.submit "save", class: 'btn btn-success' %>
 	</div>
-<% end %>-->
+<% end %>
