@@ -67,6 +67,8 @@ gem 'mini_magick'
 #add fog to support Amazon S3
 gem 'fog'
 
+#add will_paginate for paginate checkpoint
+gem 'will_paginate', '~> 3.0.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
