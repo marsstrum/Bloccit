@@ -21,7 +21,9 @@
 				</div>
 			</div>
 		<% end %>
-			<%= will_paginate @posts %>
+			<div class="digg_pagination">
+				<%= will_paginate @posts %>
+			</div>
 	</div>
 	<div class="col-md-4">
 		<% if policy(Post.new).create? %>
