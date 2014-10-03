@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :comments, dependent: :destroy
   has_many :votes, dependent: :destroy
   has_many :favorites, dependent: :destroy
+
   mount_uploader :avatar, AvatarUploader
 
   def role?(base_role)
@@ -15,6 +16,11 @@ class User < ActiveRecord::Base
   
   def favorited(post)
     favorites.where(post_id: post.id).first
+  end
+
+  def favorite_posts
+    #favorites.collect(&:post)  # array of posts where the favorite list user_id == this user's id
+    #favorites
   end
 
 end
