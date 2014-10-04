@@ -19,4 +19,25 @@ module ApplicationHelper
 		end
 	end
 
+def up_vote_link_classes(post)
+		base = "glyphicon glyphicon-chevron-up"
+		vote = current_user.voted(post)
+		base += "voted" if vote && vote.up_vote?
+		base
+	end
+
+	def down_vote_link_classes(post)
+		base = "glyphicon glyphicon-chevron-down"
+		vote = current_user.voted(post)
+		base += "voted" if vote && vote.down_vote?
+		base
+	end
+
+	def vote_link_classes(post,vdir) #this is not working
+		if vdir = 'up'
+			 "glyphicon glyphicon-chevron-up #{(current_user.voted(post) && current_user.voted(post).up_vote?) ? 'voted' : '' }"
+		else
+			"glyphicon glyphicon-chevron-down #{(current_user.voted(post) && current_user.voted(post).down_vote?) ? 'voted' : '' }"
+		end
+	end
 end

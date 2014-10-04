@@ -18,6 +18,11 @@ class User < ActiveRecord::Base
     favorites.where(post_id: post.id).first
   end
 
+  def voted(post)
+    votes.where(post_id: post.id).first
+  end
+
+
   def favorite_posts
     #favorites.collect(&:post)  # array of posts where the favorite list user_id == this user's id
     #favorites
