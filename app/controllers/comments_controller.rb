@@ -27,15 +27,17 @@ class CommentsController < ApplicationController
     #@comment.post = @post
     #@comment.user = current_user
     
-    #@new_comment = Comment.new
-
+    @new_comment = Comment.new
+    authorize @comment
      if @comment.save
        flash[:notice] = "Comment was saved."
-       redirect_to [@post.topic, @post]
      else
        flash[:error] = "There was an error saving the comment. Please try again."
-       render 'posts/show'
      end
+
+    respond_with(@comment) do |format|
+      format.html{ redirect_to [@post.topic, @post] }
+    end
   end
 
   def destroy
